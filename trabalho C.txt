@@ -1,0 +1,23 @@
+void verificaIdoso(int anoAtual, int anoNascimento) {
+    int idade = anoAtual - anoNascimento;
+    
+    if (idade >= 51) {
+        printf("A pessoa tem %d anos e é considerada idosa.\n", idade);
+    } else {
+        printf("A pessoa tem %d anos e NÃO é considerada idosa.\n", idade);
+    }
+}
+
+int main() {
+    int anoAtual, anoNascimento;
+    
+    printf("Digite o ano atual: ");
+    scanf("%d", &anoAtual);
+    
+    printf("Digite o ano de nascimento: ");
+    scanf("%d", &anoNascimento);
+    
+    verificaIdoso(anoAtual, anoNascimento);
+    
+    return 0;
+}
