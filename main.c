@@ -7,6 +7,13 @@ void Adolescente(int anoAtual, int anoNascimento){
         printf("idade %d anos adolescente.\n", idade);
      }
 }
+//Função Adulto
+void Adulto(int anoAtual, int anoNascimento){
+	int idade = anoAtual - anoNascimento;
+	if (idade >= 19 && idade <= 50){
+	   printf("idade %d anos - Adulto.\n", idade);
+	}
+}
 
 int main()
 {
@@ -20,7 +27,8 @@ int main()
     scanf ("%d", &anoNascimento);
 
      Adolescente(anoAtual, anoNascimento);
-
+  
+     Adulto(anoAtual, anoNascimento);
 
 
     return 0;
